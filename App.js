@@ -34,12 +34,6 @@ export default function App() {
         caretHidden={true}
         onChangeText={(text) => {
           setSum(sum+parseInt(text));
-          switch((sum+'').length){
-            case 1: setColor('white'); break;
-            case 2: setColor('yellow'); break;
-            case 3: setColor('orange'); break;
-            case 4: setColor('red'); break;
-          }
           setValue('');
         }}
         ></TextInput>
